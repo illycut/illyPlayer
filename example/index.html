@@ -1,0 +1,52 @@
+<!--VO http://media.core-qa01.nimblefish.com/vs/QA_SANDBOX/Content/Audio/201502/2f6fc89a26060f0bc7970333844076fb94f609da.mp4.m4a-->
+<!--AV http://llnw.nimblefish.com/vs/BACKROADS/Content/Video/200903/1c41f3698590dd59566a2b1321f706d1e0835ffb.mov.mp4-->
+
+<html>
+<head>
+<link href="css/illyplayer.css" rel="stylesheet" type="text/css" />
+
+<!--<script src="js/easeljs-0.6.0.min.js"></script>
+<script src="js/tweenjs-0.4.0.min.js"></script>
+<script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>-->
+<script src="js/prototypejs.js" type="text/javascript"></script>
+
+
+</head>
+<body style="padding:0; margin:0;background:#111; overflow:hidden;">
+	
+    
+    <div id='movieHolder'>
+		
+	</div>
+
+
+</body>
+
+<script src="js/dispatcher.events.js" type="text/javascript"></script>
+<script src="js/asset.loader.js" type="text/javascript"></script>
+<script src="js/player.controls.js" type="text/javascript"></script>
+<script src="js/player.core.js" type="text/javascript"></script>
+
+
+<script>
+	
+	window.onload = function(){
+		var options = {audioType:'webkit',autoPlay:false};
+		
+		var dp = new IllyPlayer('movieHolder','wonder_video.mp4','wonder_audio.m4a',options);
+		
+			<!-- example of event listener from video player -->
+			dp.addEventListener('progress',function(e){
+				
+				console.log('video loading progress ' + e);
+				
+			});
+			
+			<!-- when you're ready to prepare for playback, call init() -->
+			dp.init();
+
+	};
+	
+</script>
+
+</html>
