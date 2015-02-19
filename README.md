@@ -4,7 +4,8 @@ iOS inline video playback and multiple video playback polyfill library
 # Developer Notes
 This is a work in progress. I had been building a media player for a while and iOS releases kept making it more challenging to use video in Safari, especially on iPhone.  With the release of iOS8 and the html5 compliance update to allow for canvas usage on the iPhone, I came up with this idea to recreate video playback.   This library is the result.  At its completion, this library will have all the same events as normal video tag, all the same controls and more capabilities.
 
-<b> Prototype JS </b> is required to use this library. I have included it in this repository
+<b> Prototype JS </b> is required to use this library. I have included it in this repository<br>
+<b> Supported On </b> iOS 8.1 or higher.  Doesn't function well on desktop (you also don't need it there)
 
 # How It Works
 You can use example.html found in the repository to get an idea, but here are the specifics
